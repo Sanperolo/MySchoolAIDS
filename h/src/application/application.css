@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.mytitle{
+    -fx-font-family: "Dancing Script";    
+    -fx-font-size: 26px;
+ }
+ 
+ .button{
+ 	-fx-background-color: "#4D5C02";
+ 	-fx-text-fill: white;
+ 	
+ }
+ .button:hover{
+ 	-fx-background-color: "#99822F";
+ 	-fx-text-fill: white;
+ }
+ 
+ .button:pressed{
+ 	-fx-background-color: "#212803";
+ 	-fx-text-fill: white;
+ }
