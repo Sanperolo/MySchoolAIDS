@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -19,7 +26,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -37,25 +44,24 @@
                <children>
                   <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../images/CChannel.png" />
+                        <Image url="@../images/logo_sanpe.jpg" />
                      </image>
                      <effect>
-                        <SepiaTone />
+                        <Blend />
                      </effect>
                   </ImageView>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                      <children>
-                        <Label styleClass="mytitle" stylesheets="@../application/application.css" text="A great proyect!">
+                        <Label styleClass="mytitle" stylesheets="@../application/application.css" text="School of AIDS">
                            <VBox.margin>
                               <Insets top="5.0" />
                            </VBox.margin>
                         </Label>
-                        <Label text="School of AID">
+                        <Label text="Need Help?">
                            <contextMenu>
                               <ContextMenu>
                                 <items>
-                                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-                                    <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                  <MenuItem mnemonicParsing="false" text="Sorry Bad Luck" />
                                 </items>
                               </ContextMenu>
                            </contextMenu>
@@ -69,7 +75,7 @@
                      <children>
                         <HBox alignment="BOTTOM_RIGHT" prefHeight="138.0" prefWidth="213.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button mnemonicParsing="false" onMouseClicked="#cerrar" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: orange;" text="DIE">
+                              <Button mnemonicParsing="false" onMouseClicked="#cerrar" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: aqua;" text="DIE">
                                  <tooltip>
                                     <Tooltip text="click me!" />
                                  </tooltip>
@@ -80,7 +86,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button mnemonicParsing="false" onMouseClicked="#mostrarVentanaSecundaria" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: orange;" text="LIVE">
+                              <Button mnemonicParsing="false" onMouseClicked="#mostrarVentanaSecundaria" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: aqua;" text="LIVE">
                                  <tooltip>
                                     <Tooltip text="sure you want to live?" />
                                  </tooltip>
@@ -99,11 +105,11 @@
             </GridPane>
          </center>
          <bottom>
-            <AnchorPane prefHeight="50.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="50.0" style="-fx-background-color: AQUA;" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="-24.0" layoutY="-71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
                      <image>
-                        <Image url="@../images/ccheart.png" />
+                        <Image url="@../images/logo_sanpe.jpg" />
                      </image>
                   </ImageView>
                </children>

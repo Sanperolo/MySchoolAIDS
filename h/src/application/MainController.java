@@ -43,7 +43,7 @@ public class MainController {
            Window stagePrincipal = null;
 		   ventana.initOwner(stagePrincipal);
            Scene scene = new Scene(ventanaDos);
-           Image image = new Image("images/calabaza.png");  //pass in the image path
+           Image image = new Image("images/Onepiece.png");  //pass in the image path
            scene.setCursor(new ImageCursor(image));
            ventana.initStyle(StageStyle.UNDECORATED);
            ventana.setScene(scene);

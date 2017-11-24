@@ -17,7 +17,7 @@ public class Main extends Application {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("../views/Main.fxml"));
 			Scene scene = new Scene(root,640,480);
-			Image image = new Image("images/calabaza.png");  //pass in the image path
+			Image image = new Image("images/Onepiece.png");  //pass in the image path
 			scene.setCursor(new ImageCursor(image));
 			scene.getCursor();
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
