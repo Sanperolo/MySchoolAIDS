@@ -2,10 +2,12 @@ package application;
 	
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.fxml.FXMLLoader;
 
@@ -25,6 +27,8 @@ public class Main extends Application {
 			scene.getStylesheets().add("https://fonts.googleapis.com/css?family=Dancing+Script");
 			Font.loadFont(getClass().getResourceAsStream("../fonts/ArchitectsDaughter-Regular.ttf"), 20);
 			primaryStage.setScene(scene);
+			primaryStage.initStyle(StageStyle.TRANSPARENT);
+			scene.setFill(Color.TRANSPARENT);
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
